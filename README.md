@@ -1,4 +1,14 @@
-[English Version/英文版](README_EN.md)
+<h1 align="center">Go2 Gazebo Sim</h1>
+
+<p align="center">
+  <a href="README.md">中文</a> |
+  <a href="README_EN.md">English</a>
+</p>
+
+<p align="center">
+  <img src="https://www.unitree.com/images/b5fffd3e4fc04e6f9fcafedb9516b341_3840x2146.jpg" alt="Unitree Go2" width="720">
+</p>
+
 # 1. 项目描述
 本项目为宇树机器狗系列第一章ROS2-Gazebo仿真的基础项目仓库，该仓库会随着系列项目的推进不定时进行更新，当前计划可查看本人飞书查看项目情况[项目飞书](https://ai.feishu.cn/wiki/CVpbwLIiMiwGnekKjhMcLXTRnag?from=from_copylink)，这个项目预计将会是一个超长期项目。
 
@@ -64,19 +74,25 @@ cd go2_sim_ws
 source install/local_setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/robot1/cmd_vel
 ```
+![alt text](<images/2026-05-10 19-41-15.gif>)
+
 在终端中执行上述命令后就可以使用键盘对其进行简单的控制了，同时可以使用下面的服务完成对机器狗的控制,支持的服务有walk、up、sit，分别对应走、站、趴。
 ```bash
 ros2 service call /robot1/robot_behavior_command quadropted_msgs/srv/RobotBehaviorCommand "{command: 'walk'}"
 ```
+![alt text](<images/2026-05-10 19-48-16.gif>)
+
 ## 2.3 建图和导航
 建图需在终端中输入如下命令
 ```bash
 ros2 launch gazebo_sim launch.py sensors:=true world:=warehouse.sdf 
 ros2 launch cartographer go2_cartographer.launch.py
  ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/robot1/cmd_vel #【键盘控制
- ros2 run nav2_map_server map_saver_cli -t map -f warehouse_map #保存地图
+ros2 run nav2_map_server map_saver_cli -t map -f warehouse_map #保存地图
 ```
 ![alt text](images/image-21.png)
+
+![alt text](<images/2026-05-10 20-10-20.gif>)
 
 导航需要在终端中输入如下命令
 ```bash
@@ -84,3 +100,8 @@ ros2 launch gazebo_sim launch.py sensors:=true world:=warehouse.sdf
 ros2 launch navigation2 go2_navigation2.launch.py 
 ```
 ![alt text](images/image-22.png)
+
+![alt text](<images/2026-05-10 20-18-03.gif>)
+
+# 后言
+此项目的构建离不开开源社区的力量，我仅是对开源社区中项目进行了整合，并做了一些修改，但功劳远不及其他项目的作者。在此感谢开源社区，开源项目，开源社区。

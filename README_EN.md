@@ -1,3 +1,14 @@
+<h1 align="center">Go2 Gazebo Sim</h1>
+
+<p align="center">
+  <a href="README.md">中文</a> |
+  <a href="README_EN.md">English</a>
+</p>
+
+<p align="center">
+  <img src="https://www.unitree.com/images/b5fffd3e4fc04e6f9fcafedb9516b341_3840x2146.jpg" alt="Unitree Go2" width="720">
+</p>
+
 # 1. Project Description
 This repository is the foundational ROS2-Gazebo simulation project for Chapter 1 of the Unitree robot dog series. The repository will be updated from time to time as the full project series progresses. You can check the current project plan on my Feishu page: [Feishu Project Page](https://ai.feishu.cn/wiki/CVpbwLIiMiwGnekKjhMcLXTRnag?from=from_copylink). This is expected to be a very long-term project.
 
@@ -77,11 +88,13 @@ cd go2_sim_ws
 source install/local_setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/robot1/cmd_vel
 ```
+![alt text](<images/2026-05-10 19-41-15.gif>)
 
 Once the command runs, you can control the robot dog with keyboard input. Behavior services support `walk`, `up`, and `sit`.
 ```bash
 ros2 service call /robot1/robot_behavior_command quadropted_msgs/srv/RobotBehaviorCommand "{command: 'walk'}"
 ```
+![alt text](<images/2026-05-10 19-48-16.gif>)
 
 ## 2.3 Mapping and Navigation
 For mapping, run the following commands in terminal:
@@ -94,6 +107,8 @@ ros2 run nav2_map_server map_saver_cli -t map -f warehouse_map # save map
 
 ![alt text](images/image-21.png)
 
+![alt text](<images/2026-05-10 20-10-20.gif>)
+
 For navigation, run:
 ```bash
 ros2 launch gazebo_sim launch.py sensors:=true world:=warehouse.sdf
@@ -101,3 +116,8 @@ ros2 launch navigation2 go2_navigation2.launch.py
 ```
 
 ![alt text](images/image-22.png)
+
+![alt text](<images/2026-05-10 20-18-03.gif>)
+
+# Afterword
+This project would not be possible without the strength of the open-source community. I mainly integrated existing open-source projects and made some modifications, but the credit belongs far more to the original project authors. Thanks to the open-source community, open-source projects, and open-source contributors.
