@@ -1,9 +1,0 @@
-/home/huahua/project/ROS2-Gazebo-GO2/build/navigation2/CMakeFiles/uninstall.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/navigation2/CMakeFiles/navigation2_uninstall.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/navigation2/CMakeFiles/test.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/navigation2/CMakeFiles/edit_cache.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/navigation2/CMakeFiles/rebuild_cache.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/navigation2/CMakeFiles/list_install_components.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/navigation2/CMakeFiles/install.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/navigation2/CMakeFiles/install/local.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/navigation2/CMakeFiles/install/strip.dir

@@ -1,9 +1,0 @@
-/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_controller/CMakeFiles/uninstall.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_controller/CMakeFiles/quadropted_controller_uninstall.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_controller/CMakeFiles/test.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_controller/CMakeFiles/edit_cache.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_controller/CMakeFiles/rebuild_cache.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_controller/CMakeFiles/list_install_components.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_controller/CMakeFiles/install.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_controller/CMakeFiles/install/local.dir
-/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_controller/CMakeFiles/install/strip.dir
