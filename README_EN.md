@@ -16,10 +16,12 @@ This repository is the foundational ROS2-Gazebo simulation project for Chapter 1
 ## 2.1 Build and Run Directly
 Go to the workspace:
 ```bash
-cd go2_sim_ws
+cd ROS2-Gazebo-GO2
 colcon build
 source install/setup.bash
-export CYCLONEDDS_URI=file://~/go2_sim_ws/src/docker/cyclonedds.xml
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp  # Use CycloneDDS
+export GZ_SIM_RESOURCE_PATH=~/project/ROS2-Gazebo-GO2/src/gazebo_sim/models
+export CYCLONEDDS_URI=file://~/ROS2-Gazebo-GO2/src/docker/cyclonedds.xml
 ```
 
 ![alt text](images/image-17.png)
@@ -41,7 +43,7 @@ Both LiDARs can publish `LaserScan` and `PointCloud2` data simultaneously, makin
 
 Use keyboard teleoperation:
 ```bash
-cd go2_sim_ws
+cd ROS2-Gazebo-GO2
 source install/local_setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/robot1/cmd_vel
 ```
@@ -56,7 +58,7 @@ Before using Docker, please read the Docker setup guide briefly, since environme
 
 The following commands cover the main Docker workflow:
 ```bash
-cd go2_sim_ws/src/docker
+cd ROS2-Gazebo-GO2/src/docker
 docker compose up -d --build --remove-orphans        # Build containers
 docker compose up -d go2_sim                        # Start container in detached mode
 docker compose ps                                    # List containers
@@ -84,7 +86,7 @@ After successful startup, you should see:
 As above, the project includes a front monocular camera and two LiDARs (GO2 front L1 + external VLP16), both of which can publish `LaserScan` and `PointCloud2`. This supports later mapping/navigation tasks. A D435i camera is also included.
 
 ```bash
-cd go2_sim_ws
+cd ROS2-Gazebo-GO2
 source install/local_setup.bash
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/robot1/cmd_vel
 ```
