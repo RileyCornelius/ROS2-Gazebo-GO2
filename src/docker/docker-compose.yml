@@ -20,7 +20,7 @@ services:
       - /dev/dri:/dev/dri
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - /home/huahua:/home/ROS2
+      - ${HOME}:/home/ROS2
       - /dev/shm:/dev/shm  
     deploy:
       resources:

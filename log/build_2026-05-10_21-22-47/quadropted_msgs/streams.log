@@ -1,0 +1,365 @@
+[0.014s] Invoking command in '/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/huahua/project/ROS2-Gazebo-GO2/src/quadropted_msgs -DCMAKE_INSTALL_PREFIX=/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs
+[0.089s] -- The C compiler identification is GNU 11.4.0
+[0.154s] -- The CXX compiler identification is GNU 11.4.0
+[0.160s] -- Detecting C compiler ABI info
+[0.214s] -- Detecting C compiler ABI info - done
+[0.218s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.218s] -- Detecting C compile features
+[0.219s] -- Detecting C compile features - done
+[0.221s] -- Detecting CXX compiler ABI info
+[0.269s] -- Detecting CXX compiler ABI info - done
+[0.276s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.277s] -- Detecting CXX compile features
+[0.277s] -- Detecting CXX compile features - done
+[0.287s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.428s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.523s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.574s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.581s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.595s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.613s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.632s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.674s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.906s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.222s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.351s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.369s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.371s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.393s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.393s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.393s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.393s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.413s] -- Found PythonExtra: .so  
+[1.476s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.494s] -- Added test 'lint_cmake' to check CMake code style
+[1.495s] -- Added test 'xmllint' to check XML markup files
+[1.496s] -- Configuring done
+[1.533s] -- Generating done
+[1.544s] -- Build files have been written to: /home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs
+[1.555s] Invoked command in '/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/huahua/project/ROS2-Gazebo-GO2/src/quadropted_msgs -DCMAKE_INSTALL_PREFIX=/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs
+[1.556s] Invoking command in '/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs -- -j20 -l20
+[1.593s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.603s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.605s] [  3%] Built target ament_cmake_python_copy_quadropted_msgs
+[1.776s] running egg_info
+[1.777s] creating quadropted_msgs.egg-info
+[1.777s] writing quadropted_msgs.egg-info/PKG-INFO
+[1.777s] writing dependency_links to quadropted_msgs.egg-info/dependency_links.txt
+[1.778s] writing top-level names to quadropted_msgs.egg-info/top_level.txt
+[1.778s] writing manifest file 'quadropted_msgs.egg-info/SOURCES.txt'
+[1.780s] reading manifest file 'quadropted_msgs.egg-info/SOURCES.txt'
+[1.781s] writing manifest file 'quadropted_msgs.egg-info/SOURCES.txt'
+[1.804s] [  3%] Built target ament_cmake_python_build_quadropted_msgs_egg
+[1.927s] [  6%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadropted_msgs/msg/detail/robot_velocity__functions.c.o[0m
+[1.928s] [  6%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadropted_msgs/msg/detail/robot_gait_command__functions.c.o[0m
+[1.928s] [  7%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadropted_msgs/msg/detail/robot_mode_command__functions.c.o[0m
+[1.928s] [  9%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadropted_msgs/msg/detail/robot_foot_contact__functions.c.o[0m
+[1.932s] [ 11%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadropted_msgs/srv/detail/robot_behavior_command__functions.c.o[0m
+[1.944s] [ 11%] Built target quadropted_msgs__cpp
+[1.951s] [ 12%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.953s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.954s] [ 15%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.979s] [ 17%] [32m[1mLinking C shared library libquadropted_msgs__rosidl_generator_c.so[0m
+[2.014s] [ 17%] Built target quadropted_msgs__rosidl_generator_c
+[2.022s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.022s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.023s] [ 22%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.201s] [ 23%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadropted_msgs/msg/robot_foot_contact__type_support.cpp.o[0m
+[2.201s] [ 25%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadropted_msgs/msg/robot_velocity__type_support.cpp.o[0m
+[2.201s] [ 26%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadropted_msgs/msg/robot_gait_command__type_support.cpp.o[0m
+[2.201s] [ 28%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadropted_msgs/srv/robot_behavior_command__type_support.cpp.o[0m
+[2.202s] [ 30%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadropted_msgs/msg/robot_mode_command__type_support.cpp.o[0m
+[2.245s] [ 31%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadropted_msgs/msg/detail/robot_foot_contact__type_support.cpp.o[0m
+[2.245s] [ 36%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadropted_msgs/msg/detail/robot_gait_command__type_support.cpp.o[0m
+[2.245s] [ 36%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadropted_msgs/msg/detail/robot_mode_command__type_support.cpp.o[0m
+[2.245s] [ 38%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadropted_msgs/msg/detail/robot_velocity__type_support.cpp.o[0m
+[2.245s] [ 38%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadropted_msgs/srv/detail/robot_behavior_command__type_support.cpp.o[0m
+[2.282s] [ 39%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadropted_msgs/msg/detail/dds_fastrtps/robot_velocity__type_support.cpp.o[0m
+[2.282s] [ 41%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadropted_msgs/msg/detail/dds_fastrtps/robot_gait_command__type_support.cpp.o[0m
+[2.284s] [ 42%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadropted_msgs/msg/detail/dds_fastrtps/robot_foot_contact__type_support.cpp.o[0m
+[2.284s] [ 44%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadropted_msgs/msg/detail/dds_fastrtps/robot_mode_command__type_support.cpp.o[0m
+[2.291s] [ 46%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadropted_msgs/srv/detail/dds_fastrtps/robot_behavior_command__type_support.cpp.o[0m
+[2.467s] [ 47%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadropted_msgs/msg/robot_velocity__type_support.cpp.o[0m
+[2.474s] [ 49%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadropted_msgs/msg/robot_gait_command__type_support.cpp.o[0m
+[2.482s] [ 50%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadropted_msgs/msg/robot_mode_command__type_support.cpp.o[0m
+[2.523s] [ 52%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadropted_msgs/msg/robot_foot_contact__type_support.cpp.o[0m
+[2.528s] [ 53%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadropted_msgs/srv/robot_behavior_command__type_support.cpp.o[0m
+[2.556s] [ 57%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadropted_msgs/msg/detail/robot_mode_command__type_support_c.cpp.o[0m
+[2.556s] [ 57%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadropted_msgs/msg/detail/robot_gait_command__type_support_c.cpp.o[0m
+[2.565s] [ 58%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadropted_msgs/msg/detail/robot_velocity__type_support_c.cpp.o[0m
+[2.566s] [ 60%] [32m[1mLinking CXX shared library libquadropted_msgs__rosidl_typesupport_cpp.so[0m
+[2.568s] [ 61%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadropted_msgs/msg/detail/robot_foot_contact__type_support_c.cpp.o[0m
+[2.575s] [ 63%] [32mBuilding CXX object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadropted_msgs/srv/detail/robot_behavior_command__type_support_c.cpp.o[0m
+[2.590s] [ 65%] [32m[1mLinking CXX shared library libquadropted_msgs__rosidl_typesupport_c.so[0m
+[2.635s] [ 66%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadropted_msgs/msg/detail/robot_velocity__type_support.c.o[0m
+[2.640s] [ 68%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadropted_msgs/msg/detail/robot_mode_command__type_support.c.o[0m
+[2.643s] [ 69%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadropted_msgs/msg/detail/robot_gait_command__type_support.c.o[0m
+[2.647s] [ 71%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadropted_msgs/msg/detail/robot_foot_contact__type_support.c.o[0m
+[2.648s] [ 71%] Built target quadropted_msgs__rosidl_typesupport_c
+[2.648s] [ 73%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadropted_msgs/srv/detail/robot_behavior_command__type_support.c.o[0m
+[2.661s] [ 73%] Built target quadropted_msgs__rosidl_typesupport_cpp
+[2.684s] [ 74%] [32m[1mLinking C shared library libquadropted_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.717s] [ 74%] Built target quadropted_msgs__rosidl_typesupport_introspection_c
+[2.762s] [ 76%] [32m[1mLinking CXX shared library libquadropted_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[2.776s] [ 77%] [32m[1mLinking CXX shared library libquadropted_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.825s] [ 77%] Built target quadropted_msgs__rosidl_typesupport_fastrtps_cpp
+[2.862s] [ 77%] Built target quadropted_msgs__rosidl_typesupport_introspection_cpp
+[2.933s] [ 79%] [32m[1mLinking CXX shared library libquadropted_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[2.987s] [ 79%] Built target quadropted_msgs__rosidl_typesupport_fastrtps_c
+[3.006s] [ 79%] Built target quadropted_msgs
+[3.027s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[3.520s] [ 80%] Built target quadropted_msgs__py
+[3.534s] [ 82%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadropted_msgs/srv/_robot_behavior_command_s.c.o[0m
+[3.534s] [ 84%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadropted_msgs/msg/_robot_mode_command_s.c.o[0m
+[3.535s] [ 87%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadropted_msgs/msg/_robot_gait_command_s.c.o[0m
+[3.535s] [ 87%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadropted_msgs/msg/_robot_velocity_s.c.o[0m
+[3.536s] [ 88%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadropted_msgs/msg/_robot_foot_contact_s.c.o[0m
+[3.614s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/quadropted_msgs/libquadropted_msgs__rosidl_generator_py.so[0m
+[3.651s] [ 90%] Built target quadropted_msgs__rosidl_generator_py
+[3.666s] [ 92%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/quadropted_msgs/_quadropted_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[3.666s] [ 93%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/quadropted_msgs/_quadropted_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[3.666s] [ 95%] [32mBuilding C object CMakeFiles/quadropted_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/quadropted_msgs/_quadropted_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[3.730s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.732s] [100%] [32m[1mLinking C shared library rosidl_generator_py/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.732s] [100%] [32m[1mLinking C shared library rosidl_generator_py/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[3.760s] [100%] Built target quadropted_msgs__rosidl_typesupport_fastrtps_c__pyext
+[3.762s] [100%] Built target quadropted_msgs__rosidl_typesupport_introspection_c__pyext
+[3.763s] [100%] Built target quadropted_msgs__rosidl_typesupport_c__pyext
+[3.771s] Invoked command in '/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs -- -j20 -l20
+[3.772s] Invoking command in '/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs
+[3.778s] -- Install configuration: ""
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/ament_index/resource_index/rosidl_interfaces/quadropted_msgs
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/robot_behavior_command.h
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__struct.h
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__type_support.h
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__functions.h
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__functions.c
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/robot_foot_contact.h
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/robot_mode_command.h
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/robot_velocity.h
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__type_support.h
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__functions.c
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__functions.h
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__type_support.h
+[3.778s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__functions.c
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__functions.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__functions.c
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__struct.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__functions.c
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__type_support.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__functions.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__struct.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__struct.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__type_support.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__functions.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__struct.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/robot_gait_command.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/rosidl_generator_c__visibility_control.h
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/environment/library_path.sh
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/environment/library_path.dsv
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_generator_c.so
+[3.779s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_generator_c.so" to ""
+[3.779s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs
+[3.779s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv
+[3.779s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__rosidl_typesupport_fastrtps_c.h
+[3.779s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg
+[3.779s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.780s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail
+[3.780s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__rosidl_typesupport_fastrtps_c.h
+[3.780s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__rosidl_typesupport_fastrtps_c.h
+[3.780s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__rosidl_typesupport_fastrtps_c.h
+[3.780s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__rosidl_typesupport_fastrtps_c.h
+[3.780s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_fastrtps_c.so
+[3.780s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[3.780s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs
+[3.780s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv
+[3.780s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/robot_behavior_command.hpp
+[3.780s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail
+[3.780s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__type_support.hpp
+[3.780s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__traits.hpp
+[3.780s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__struct.hpp
+[3.780s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__builder.hpp
+[3.780s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/robot_mode_command.hpp
+[3.781s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__struct.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__type_support.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__builder.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__struct.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__traits.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__builder.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__struct.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__struct.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__traits.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__traits.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__type_support.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__type_support.hpp
+[3.781s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__builder.hpp
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__builder.hpp
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__type_support.hpp
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__traits.hpp
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/robot_gait_command.hpp
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/robot_velocity.hpp
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/robot_foot_contact.hpp
+[3.782s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs
+[3.782s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv
+[3.782s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/dds_fastrtps
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__rosidl_typesupport_fastrtps_cpp.hpp
+[3.782s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.782s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__rosidl_typesupport_fastrtps_cpp.hpp
+[3.782s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/dds_fastrtps
+[3.783s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__rosidl_typesupport_fastrtps_cpp.hpp
+[3.783s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__rosidl_typesupport_fastrtps_cpp.hpp
+[3.783s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__rosidl_typesupport_fastrtps_cpp.hpp
+[3.783s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_fastrtps_cpp.so
+[3.783s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[3.783s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs
+[3.783s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv
+[3.783s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail
+[3.783s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__type_support.c
+[3.783s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__rosidl_typesupport_introspection_c.h
+[3.783s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg
+[3.783s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.783s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail
+[3.783s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__rosidl_typesupport_introspection_c.h
+[3.783s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__type_support.c
+[3.784s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__rosidl_typesupport_introspection_c.h
+[3.784s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__rosidl_typesupport_introspection_c.h
+[3.784s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__type_support.c
+[3.784s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__rosidl_typesupport_introspection_c.h
+[3.784s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__type_support.c
+[3.784s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__type_support.c
+[3.784s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_introspection_c.so
+[3.784s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_introspection_c.so" to ""
+[3.784s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_c.so
+[3.784s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_c.so" to ""
+[3.784s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs
+[3.784s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv
+[3.784s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail
+[3.784s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__rosidl_typesupport_introspection_cpp.hpp
+[3.784s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/srv/detail/robot_behavior_command__type_support.cpp
+[3.784s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg
+[3.784s] -- Up-to-date: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__type_support.cpp
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__type_support.cpp
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__type_support.cpp
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_velocity__rosidl_typesupport_introspection_cpp.hpp
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_mode_command__rosidl_typesupport_introspection_cpp.hpp
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_foot_contact__rosidl_typesupport_introspection_cpp.hpp
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__type_support.cpp
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/include/quadropted_msgs/quadropted_msgs/msg/detail/robot_gait_command__rosidl_typesupport_introspection_cpp.hpp
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_introspection_cpp.so
+[3.785s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_cpp.so
+[3.785s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_typesupport_cpp.so" to ""
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/environment/pythonpath.sh
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/environment/pythonpath.dsv
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs-0.1.0-py3.10.egg-info
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs-0.1.0-py3.10.egg-info/dependency_links.txt
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs-0.1.0-py3.10.egg-info/PKG-INFO
+[3.785s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs-0.1.0-py3.10.egg-info/top_level.txt
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs-0.1.0-py3.10.egg-info/SOURCES.txt
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/_quadropted_msgs_s.ep.rosidl_typesupport_c.c
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/srv
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/srv/_robot_behavior_command_s.c
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/srv/__init__.py
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/srv/_robot_behavior_command.py
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/_quadropted_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_velocity_s.c
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_velocity.py
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_gait_command_s.c
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_foot_contact.py
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_foot_contact_s.c
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/__init__.py
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_gait_command.py
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_mode_command_s.c
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_mode_command.py
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/__init__.py
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/libquadropted_msgs__rosidl_generator_py.so
+[3.786s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/_quadropted_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[3.811s] Listing '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs'...
+[3.811s] Compiling '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/__init__.py'...
+[3.811s] Listing '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg'...
+[3.811s] Compiling '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/__init__.py'...
+[3.811s] Compiling '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_foot_contact.py'...
+[3.811s] Compiling '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_gait_command.py'...
+[3.811s] Compiling '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_mode_command.py'...
+[3.811s] Compiling '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/msg/_robot_velocity.py'...
+[3.811s] Listing '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/srv'...
+[3.811s] Compiling '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/srv/__init__.py'...
+[3.811s] Compiling '/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/srv/_robot_behavior_command.py'...
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[3.814s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[3.814s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[3.814s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/local/lib/python3.10/dist-packages/quadropted_msgs/quadropted_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_generator_py.so
+[3.814s] -- Set runtime path of "/home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/lib/libquadropted_msgs__rosidl_generator_py.so" to ""
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/msg/RobotVelocity.idl
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/msg/RobotGaitCommand.idl
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/msg/RobotModeCommand.idl
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/msg/RobotFootContact.idl
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/srv/RobotBehaviorCommand.idl
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/msg/RobotVelocity.msg
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/msg/RobotGaitCommand.msg
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/msg/RobotModeCommand.msg
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/msg/RobotFootContact.msg
+[3.814s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/srv/RobotBehaviorCommand.srv
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/srv/RobotBehaviorCommand_Request.msg
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/srv/RobotBehaviorCommand_Response.msg
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/ament_index/resource_index/package_run_dependencies/quadropted_msgs
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/ament_index/resource_index/parent_prefix_path/quadropted_msgs
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/environment/ament_prefix_path.sh
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/environment/ament_prefix_path.dsv
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/environment/path.sh
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/environment/path.dsv
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/local_setup.bash
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/local_setup.sh
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/local_setup.zsh
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/local_setup.dsv
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/package.dsv
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/ament_index/resource_index/packages/quadropted_msgs
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/export_quadropted_msgs__rosidl_generator_cExport.cmake
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/export_quadropted_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/export_quadropted_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/export_quadropted_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/export_quadropted_msgs__rosidl_generator_cppExport.cmake
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/export_quadropted_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/export_quadropted_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[3.815s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/quadropted_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/quadropted_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/quadropted_msgs__rosidl_typesupport_cExport.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/quadropted_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/quadropted_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/quadropted_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/quadropted_msgs__rosidl_typesupport_cppExport.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/quadropted_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/export_quadropted_msgs__rosidl_generator_pyExport.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/export_quadropted_msgs__rosidl_generator_pyExport-noconfig.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/rosidl_cmake-extras.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/quadropted_msgsConfig.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/cmake/quadropted_msgsConfig-version.cmake
+[3.816s] -- Installing: /home/huahua/project/ROS2-Gazebo-GO2/install/quadropted_msgs/share/quadropted_msgs/package.xml
+[3.818s] Invoked command in '/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs

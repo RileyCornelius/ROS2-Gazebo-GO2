@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ef56e1daf7321524516c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "quadropted_msgs__py",
+					"jsonFile" : "directory-quadropted_msgs__py-fbb14d0f60fca22d4e0d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs/quadropted_msgs__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "quadropted_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_quadropted_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_quadropted_msgs_egg-29954c178969ca53678e.json",
+					"name" : "ament_cmake_python_build_quadropted_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_quadropted_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_quadropted_msgs-bb56f3bd04faad8f3dc3.json",
+					"name" : "ament_cmake_python_copy_quadropted_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs-a21d15e3536e92e60d65.json",
+					"name" : "quadropted_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__cpp-aa4afd0d33cc62fa783c.json",
+					"name" : "quadropted_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "quadropted_msgs__py::@9de012dbe9e0f0e63892",
+					"jsonFile" : "target-quadropted_msgs__py-5f1d10965bc7ebbb68aa.json",
+					"name" : "quadropted_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_generator_c-cfc6492c56afd9842546.json",
+					"name" : "quadropted_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_generator_py-2836c0d028c6d4e2b5c4.json",
+					"name" : "quadropted_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_typesupport_c-ab3d0890741980e9d128.json",
+					"name" : "quadropted_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_typesupport_c__pyext-1983bdd6a1c2df777e6f.json",
+					"name" : "quadropted_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_typesupport_cpp-c5270b32c34998c74034.json",
+					"name" : "quadropted_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_typesupport_fastrtps_c-6ed4fec214c6921c297b.json",
+					"name" : "quadropted_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_typesupport_fastrtps_c__pyext-d16b5992d8f6497a8696.json",
+					"name" : "quadropted_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_typesupport_fastrtps_cpp-f6512927719fc718d937.json",
+					"name" : "quadropted_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_typesupport_introspection_c-68a71b825c3b8684151b.json",
+					"name" : "quadropted_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_typesupport_introspection_c__pyext-a0b19273ce13af82ebc7.json",
+					"name" : "quadropted_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs__rosidl_typesupport_introspection_cpp-92156f0989dc5d30dbb9.json",
+					"name" : "quadropted_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "quadropted_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-quadropted_msgs_uninstall-6d7c68a7e451b2abdfac.json",
+					"name" : "quadropted_msgs_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-84d28bf471c0f1067e28.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/huahua/project/ROS2-Gazebo-GO2/build/quadropted_msgs",
+		"source" : "/home/huahua/project/ROS2-Gazebo-GO2/src/quadropted_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
