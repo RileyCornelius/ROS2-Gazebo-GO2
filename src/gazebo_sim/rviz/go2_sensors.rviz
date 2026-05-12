@@ -56,7 +56,7 @@ Visualization Manager:
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /robot1/robot_description
+        Value: /robot_description
       Enabled: true
       Links:
         All Links Enabled: true
@@ -208,7 +208,7 @@ Visualization Manager:
         Durability Policy: Volatile
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /robot1/color/image_raw
+        Value: /color/image_raw
       Value: true
     - Class: rviz_common/Group
       Displays:
@@ -242,7 +242,7 @@ Visualization Manager:
             Filter size: 10
             History Policy: Keep Last
             Reliability Policy: Reliable
-            Value: /robot1/scan
+            Value: /scan
           Use Fixed Frame: true
           Use rainbow: true
           Value: true
@@ -276,7 +276,7 @@ Visualization Manager:
             Filter size: 10
             History Policy: Keep Last
             Reliability Policy: Reliable
-            Value: /robot1/scan/points
+            Value: /scan/points
           Use Fixed Frame: true
           Use rainbow: true
           Value: true
@@ -314,7 +314,7 @@ Visualization Manager:
             Filter size: 10
             History Policy: Keep Last
             Reliability Policy: Reliable
-            Value: /robot1/velodyne
+            Value: /velodyne
           Use Fixed Frame: true
           Use rainbow: true
           Value: true
@@ -348,7 +348,7 @@ Visualization Manager:
             Filter size: 10
             History Policy: Keep Last
             Reliability Policy: Reliable
-            Value: /robot1/velodyne/points
+            Value: /velodyne/points
           Use Fixed Frame: true
           Use rainbow: true
           Value: true
@@ -368,7 +368,7 @@ Visualization Manager:
             Durability Policy: Volatile
             History Policy: Keep Last
             Reliability Policy: Reliable
-            Value: /robot1/rgbd_d435/image
+            Value: /rgbd_d435/image
           Value: true
         - Class: rviz_default_plugins/Image
           Enabled: true
@@ -382,7 +382,7 @@ Visualization Manager:
             Durability Policy: Volatile
             History Policy: Keep Last
             Reliability Policy: Reliable
-            Value: /robot1/rgbd_d435/depth_image
+            Value: /rgbd_d435/depth_image
           Value: true
       Enabled: true
       Name: D435
