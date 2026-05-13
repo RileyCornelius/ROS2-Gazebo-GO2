@@ -26,11 +26,7 @@ class RobotControllerNode(Node):
         body = [0.3762, 0.0935]
         legs = [0.0, 0.0955, 0.213, 0.213]
         
-        self.declare_parameter('robot_id', 1)
-        self.robot_id = self.get_parameter('robot_id').get_parameter_value().integer_value
-
-        
-        self.robot = RobotController.Robot(self, body, legs, USE_IMU, self.robot_id)
+        self.robot = RobotController.Robot(self, body, legs, USE_IMU)
         self.inverseKinematics = robot_IK.InverseKinematics(body, legs)
 
         

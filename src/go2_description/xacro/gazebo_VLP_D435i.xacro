@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
-    <xacro:macro  name="robot_gazebo_sensors" params="robot_name">
+    <xacro:macro  name="robot_gazebo_sensors">
 
         <gazebo>
             <plugin name="gz_ros2_control::GazeboSimROS2ControlPlugin" filename="libgz_ros2_control-system.so">
@@ -11,7 +11,7 @@
         </gazebo>
 
 
-        <ros2_control name="${robot_name}_GazeboSystem" type="system">
+        <ros2_control name="GazeboSystem" type="system">
             <hardware>
                 <plugin>gz_ros2_control/GazeboSimSystem</plugin>
             </hardware>

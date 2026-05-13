@@ -12,7 +12,6 @@ find_package(nav2_bringup REQUIRED)
 install(DIRECTORY
   launch 
   param
-  config
   maps
   rviz
   DESTINATION share/${PROJECT_NAME}

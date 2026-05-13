@@ -31,11 +31,10 @@ def generate_launch_description():
         name='cartographer_node',
         output='screen',
         remappings=[
-            ('/tf', '/robot1/tf'),
-            ('/tf_static', '/robot1/tf_static'),
-            ('/scan', '/robot1/velodyne'),
-            ('/odom', '/robot1/odom')
-        ],
+            ('/tf', '/tf'),
+            ('/tf_static', '/tf_static'),
+            ('/odom', '/odom'),
+            ('/scan', '/velodyne')],
         parameters=[{'use_sim_time': use_sim_time}],
         arguments=['-configuration_directory', configuration_directory,
                    '-configuration_basename', configuration_basename])
@@ -54,11 +53,7 @@ def generate_launch_description():
         name='rviz2',
         arguments=['-d', rviz_config_dir],
         parameters=[{'use_sim_time': use_sim_time}],
-        output='screen',
-        remappings=[
-            ('/tf', '/robot1/tf'),
-            ('/tf_static', '/robot1/tf_static')
-        ])
+        output='screen')
 
     #===============================================定义启动文件========================================================
     ld = LaunchDescription()

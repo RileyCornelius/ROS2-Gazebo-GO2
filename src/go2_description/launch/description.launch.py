@@ -16,10 +16,9 @@ def generate_launch_description():
         default_value='false',
         description='Enable debug mode'
     )
-    robot_name = 'robot1'
     
     # Command to convert xacro to robot_description
-    robot_desc = xacro.process_file(xacro_path, mappings={'robot_name': robot_name}).toxml()
+    robot_desc = xacro.process_file(xacro_path).toxml()
     params_robot_state_publisher = {'robot_description': robot_desc, 'use_sim_time': True}
 
     # Node to spawn joint state broadcaster

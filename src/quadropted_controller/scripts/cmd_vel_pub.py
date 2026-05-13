@@ -55,7 +55,6 @@ class RobotVelocityHandler(Node):
             )
 
         new_msg = RobotVelocity()
-        new_msg.robot_id = 1
 
         new_msg.cmd_vel.linear.x = self.multiply_and_limit(msg.linear.x, 0.035, -1.0, 1.0)
         new_msg.cmd_vel.linear.y = self.multiply_and_limit(msg.linear.y, 0.012, -1.0, 1.0)
@@ -68,7 +67,6 @@ class RobotVelocityHandler(Node):
         self.publisher_.publish(new_msg)
         if self.verbose:
             self.get_logger().info(
-                f"Published RobotVelocity: robot_id={new_msg.robot_id}, "
                 f"linear=({new_msg.cmd_vel.linear.x}, {new_msg.cmd_vel.linear.y}, {new_msg.cmd_vel.linear.z}), "
                 f"angular=({new_msg.cmd_vel.angular.x}, {new_msg.cmd_vel.angular.y}, {new_msg.cmd_vel.angular.z})"
             )

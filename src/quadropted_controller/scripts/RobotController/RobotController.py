@@ -11,11 +11,10 @@ from geometry_msgs.msg import Twist
 from quadropted_msgs.msg import RobotModeCommand, RobotVelocity
 from quadropted_msgs.srv import RobotBehaviorCommand
 class Robot:
-    def __init__(self, node, body, legs, imu, robot_id):
+    def __init__(self, node, body, legs, imu):
         self.body = body
         self.legs = legs
         self.node = node  
-        self.robot_id = robot_id  
 
         self.delta_x = self.body[0] * 0.5
         self.delta_y = self.body[1] * 0.5 + self.legs[1]
@@ -64,52 +63,50 @@ class Robot:
         )
 
     def mode_callback(self, msg):
+       
+        if self.node.verbose:
+            self.node.get_logger().info(f"Received mode command: {msg.mode} for robot_id: {msg.robot_id}")
+        if msg.mode == "REST":
+            self.command.rest_event = True
+            self.command.trot_event = False
+            self.command.crawl_event = False
+            self.command.stand_event = False
+        elif msg.mode == "TROT":
+            self.command.rest_event = False
+            self.command.trot_event = True
+            self.command.crawl_event = False
+            self.command.stand_event = False
+        elif msg.mode == "CRAWL":
+            self.command.rest_event = False
+            self.command.trot_event = False
+            self.command.crawl_event = True
+            self.command.stand_event = False
+        elif msg.mode == "STAND":
+            self.command.rest_event = False
+            self.command.trot_event = False
+            self.command.crawl_event = False
+            self.command.stand_event = True
         
-        if msg.robot_id == self.robot_id:
-            if self.node.verbose:
-                self.node.get_logger().info(f"Received mode command: {msg.mode} for robot_id: {msg.robot_id}")
-            if msg.mode == "REST":
-                self.command.rest_event = True
-                self.command.trot_event = False
-                self.command.crawl_event = False
-                self.command.stand_event = False
-            elif msg.mode == "TROT":
-                self.command.rest_event = False
-                self.command.trot_event = True
-                self.command.crawl_event = False
-                self.command.stand_event = False
-            elif msg.mode == "CRAWL":
-                self.command.rest_event = False
-                self.command.trot_event = False
-                self.command.crawl_event = True
-                self.command.stand_event = False
-            elif msg.mode == "STAND":
-                self.command.rest_event = False
-                self.command.trot_event = False
-                self.command.crawl_event = False
-                self.command.stand_event = True
-            
-            self.change_controller()
+        self.change_controller()
 
     def velocity_callback(self, msg):
         
-        if msg.robot_id == self.robot_id:
-            self.command.velocity = np.array([
-                msg.cmd_vel.linear.x,
-                msg.cmd_vel.linear.y,
-                msg.cmd_vel.linear.z
-            ])  #  [x, y, z]
-            
-            self.command.yaw_rate = np.array([
-                msg.cmd_vel.angular.x,
-                msg.cmd_vel.angular.y,
-                msg.cmd_vel.angular.z
-            ])  # numpy  [roll, pitch, yaw]
-            
-            if self.node.verbose:
-                self.node.get_logger().info(
-                    f"Velocity command updated: linear={self.command.velocity}, angular={self.command.yaw_rate}"
-                )
+        self.command.velocity = np.array([
+            msg.cmd_vel.linear.x,
+            msg.cmd_vel.linear.y,
+            msg.cmd_vel.linear.z
+        ])  #  [x, y, z]
+        
+        self.command.yaw_rate = np.array([
+            msg.cmd_vel.angular.x,
+            msg.cmd_vel.angular.y,
+            msg.cmd_vel.angular.z
+        ])  # numpy  [roll, pitch, yaw]
+        
+        if self.node.verbose:
+            self.node.get_logger().info(
+                f"Velocity command updated: linear={self.command.velocity}, angular={self.command.yaw_rate}"
+            )
 
     def handle_behavior_command(self, request, response):
         command = request.command.lower()
