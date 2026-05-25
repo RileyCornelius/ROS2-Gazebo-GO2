@@ -21,22 +21,22 @@ import xacro, yaml
 def generate_launch_description():
     ld = LaunchDescription()
 
-    # ---------- 基础配置 ----------
+    # ---------- Base configuration ----------
     package_name = 'gazebo_sim'
     pkg_path = get_package_share_directory(package_name)
     robots_file_path = os.path.join(pkg_path, 'config', 'robots.yaml')
 
-    # 多机器人配置 
+    # Multi-robot configuration
     with open(robots_file_path, 'r') as file:
         yaml_data = yaml.safe_load(file)
     robots = yaml_data['robots']
     
-    # ---------- 声明启动参数 ----------
+    # ---------- Declare launch arguments ----------
     use_sim_time = LaunchConfiguration('use_sim_time', default='true')
     declare_use_sim_time = DeclareLaunchArgument(
         name='use_sim_time',
         default_value='true',
-        description='仿真时间是否使用'
+        description='Whether to use simulation time'
     )
 
     enable_rviz = LaunchConfiguration('enable_rviz', default='true')
@@ -47,7 +47,7 @@ def generate_launch_description():
     ld.add_action(declare_enable_rviz)
     ld.add_action(declare_use_sim_time)
 
-    # ---------- 多机器人全局话题重映射 ----------
+    # ---------- Global topic remapping for multi-robot setup ----------
     remappings=[
             ("/tf", "tf"),
             ("/tf_static", "tf_static"),
@@ -55,7 +55,7 @@ def generate_launch_description():
             ("/odom", "odometry/filtered")
         ]
     
-    # ---------- Gazebo-ROS时间同步配置 ----------
+    # ---------- Gazebo-ROS time synchronization setup ----------
     bridge_params = os.path.join(pkg_path,'config','gz_bridge.yaml')
     ros_gz_bridge_clock = Node(
         package="ros_gz_bridge",
@@ -68,7 +68,7 @@ def generate_launch_description():
     )
     ld.add_action(ros_gz_bridge_clock)   
 
-    # ---------- 多机器人循环启动 ----------
+    # ---------- Sequential multi-robot startup ----------
     last_action = None
 
     for i, robot in enumerate(robots):
@@ -251,7 +251,7 @@ def generate_launch_description():
             fake_bms,
         ])
 
-        # 当前机器人动作组
+        # Action group for the current robot
         robot_group = GroupAction([
             node_robot_state_publisher,
             spawn_entity,

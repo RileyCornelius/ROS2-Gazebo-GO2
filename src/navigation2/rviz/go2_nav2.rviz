@@ -25,10 +25,6 @@ Panels:
     Splitter Ratio: 0.3333333432674408
   - Class: nav2_rviz_plugins/Navigation 2
     Name: Navigation 2
-  - Class: nav2_rviz_plugins/Selector
-    Name: Selector
-  - Class: nav2_rviz_plugins/Docking
-    Name: Docking
 Visualization Manager:
   Class: ""
   Displays:
@@ -761,8 +757,6 @@ Visualization Manager:
 Window Geometry:
   Displays (<ROBOT_NAME>):
     collapsed: false
-  Docking:
-    collapsed: true
   Height: 893
   Hide Left Dock: false
   Hide Right Dock: true
@@ -773,8 +767,6 @@ Window Geometry:
     collapsed: false
   Selection:
     collapsed: false
-  Selector:
-    collapsed: true
   Tool Properties:
     collapsed: false
   Views:
