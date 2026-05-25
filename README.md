@@ -9,68 +9,105 @@
   <img src="https://www.unitree.com/images/b5fffd3e4fc04e6f9fcafedb9516b341_3840x2146.jpg" alt="Unitree Go2" width="720">
 </p>
 
-# 1. 项目描述
-本项目为宇树机器狗系列第一章ROS2-Gazebo仿真的基础项目仓库，该仓库会随着系列项目的推进不定时进行更新，当前计划可查看本人飞书查看项目情况[项目飞书](https://ai.feishu.cn/wiki/CVpbwLIiMiwGnekKjhMcLXTRnag?from=from_copylink)，这个项目预计将会是一个超长期项目。
+# 1. Project Description
+This repository is the foundational ROS2-Gazebo simulation project for Chapter 1 of the Unitree robot dog series. The repository will be updated from time to time as the full project series progresses. You can check the current project plan on my Feishu page: [Feishu Project Page](https://ai.feishu.cn/wiki/CVpbwLIiMiwGnekKjhMcLXTRnag?from=from_copylink). This is expected to be a very long-term project.
 
-# 2. 项目使用
-## 2.1 直接编译使用
-进入到工作空间
+# 2. How to Use the Project
+## 2.1 Build and Run Directly
+Go to the workspace:
 ```bash
 cd ROS2-Gazebo-GO2
-colcon build
-soure install/setup.bash
-export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp  # 使用cyclonedds
-export GZ_SIM_RESOURCE_PATH=~/project/ROS2-Gazebo-GO2/src/gazebo_sim/models
-export CYCLONEDDS_URI=file://~/ROS2-Gazebo-GO2/src/docker/cyclonedds.xml
+rosdep update
+rosdep install --from-paths . --ignore-src -r -y
+colcon build --symlink-install
+source install/setup.bash
 ```
 
 ![alt text](images/image-17.png)
 
-启动，第一次启动会比较久，因为需要下载相应的场景资源。
+Launch the simulation. The first launch may take longer because required world resources need to be downloaded:
 ```bash
+source setup.sh
 ros2 launch gazebo_sim launch.py
 ```
-成功启动后会如下图所示。
+After a successful launch, you should see something like this:
 ![alt text](images/image-18.png)
 
-本项目配备了一个狗的前置普通单目摄像头用以模拟GO2本身的前置摄像头，同时配备了两个激光雷达，一个为模拟GO2的前置L1激光雷达，一个为模拟外界的VLP16激光雷达，两个激光雷达都可同时发布LaserScan类型数据和PointCloud2类型数据，为后续的建图和导航工作提供了便利，而后续也会更新加入D435i摄像头（已经加入D435i摄像头）。
+This project includes:
+- A front monocular camera to simulate the GO2 front camera
+- Two LiDAR sensors:
+  - A front L1 LiDAR to simulate GO2’s built-in LiDAR
+  - An external VLP16 LiDAR
+
+Both LiDARs can publish `LaserScan` and `PointCloud2` data simultaneously, making mapping and navigation workflows easier. A D435i camera has also been added.
+
+Use keyboard teleoperation:
 ```bash
 cd ROS2-Gazebo-GO2
-source install/local_setup.bash
+source setup.sh
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/robot1/cmd_vel
 ```
-在终端中执行上述命令后就可以使用键盘对其进行简单的控制了，同时可以使用下面的服务完成对机器狗的控制,支持的服务有walk、up、sit，分别对应走、站、趴。
+
+After running the command above, you can control the robot dog with your keyboard. You can also use the following service to control behavior. Supported commands are `walk`, `up`, and `sit`.
 ```bash
 ros2 service call /robot1/robot_behavior_command quadropted_msgs/srv/RobotBehaviorCommand "{command: 'walk'}"
 ```
-## 2.2 docker使用
-在使用docker前请简单的阅读docker搭建流程指南，因为每个人的情况还是会有些许差别，而为我使用的是外挂卷的形式完成的任务。
-使用下面的命令可以很快的帮您完成想要的操作。
+
+## 2.2 Mapping and Navigation
+For mapping, run the following commands in terminal:
+```bash
+ros2 launch gazebo_sim launch.py sensors:=true world:=warehouse.sdf
+ros2 launch cartographer go2_cartographer.launch.py
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/robot1/cmd_vel # keyboard control
+ros2 run nav2_map_server map_saver_cli -t map -f warehouse_map # save map
+```
+
+![alt text](images/image-21.png)
+
+![alt text](<images/2026-05-10 20-10-20.gif>)
+
+For navigation, run:
+```bash
+ros2 launch gazebo_sim launch.py sensors:=true world:=warehouse.sdf
+ros2 launch navigation2 go2_navigation2.launch.py
+```
+
+![alt text](images/image-22.png)
+
+![alt text](<images/2026-05-10 20-18-03.gif>)
+
+## 2.3 Using Docker
+Before using Docker, please read the Docker setup guide briefly, since environments may differ. In my setup, I use mounted volumes.
+
+The following commands cover the main Docker workflow:
 ```bash
 cd ROS2-Gazebo-GO2/src/docker
-docker compose up -d --build --remove-orphans        #容器构建
-docker compose up -d go2_sim                        #启动容器，-d为不进入docker终端,ros2_sim是众多服务中的一个服务
-docker compose ps                                    #容器查看
-docker compose exec go2_sim bash                    #进入容器
-docker compose down                                  #容器删除
+docker compose up -d --build --remove-orphans        # Build containers
+docker compose up -d go2_sim                        # Start container in detached mode
+docker compose ps                                    # List containers
+docker compose exec go2_sim bash                    # Enter container
+docker compose down                                  # Remove containers
 ```
-进入到docker后，可以按照前面直接安装的操作来
+
+Inside the Docker container, follow the same steps as direct local usage:
 ```bash
 colcon build
-soure install/setup.bash
+source install/setup.bash
 ```
+
 ![alt text](images/image-19.png)
 
-启动，第一次启动会比较久，因为需要下载相应的场景资源。
+Launch the simulation. First launch may take longer due to resource downloads:
 ```bash
-ros2 launch gazebo_sim launch.py # 启动无扩展传感器go2
-ros2 launch gazebo_sim launch.py sensors:=true world:=warehouse.sdf # 启动带扩展传感器go2,并选定地图
+ros2 launch gazebo_sim launch.py # Launch GO2 without extended sensors
+ros2 launch gazebo_sim launch.py sensors:=true world:=warehouse.sdf # Launch GO2 with extended sensors in selected map
 ```
-成功启动后会如下图所示。
+After successful startup, you should see:
 
 ![alt text](images/image-20.png)
 
-本项目配备了一个狗的前置普通单目摄像头用以模拟GO2本身的前置摄像头，同时配备了两个激光雷达，一个为模拟GO2的前置L1激光雷达，一个为模拟外界的VLP16激光雷达，两个激光雷达都可同时发布LaserScan类型数据和PointCloud2类型数据，为后续的建图和导航工作提供了便利，而后续也会更新加入D435i摄像头。
+As above, the project includes a front monocular camera and two LiDARs (GO2 front L1 + external VLP16), both of which can publish `LaserScan` and `PointCloud2`. This supports later mapping/navigation tasks. A D435i camera is also included.
+
 ```bash
 cd ROS2-Gazebo-GO2
 source install/local_setup.bash
@@ -78,32 +115,11 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/ro
 ```
 ![alt text](<images/2026-05-10 19-41-15.gif>)
 
-在终端中执行上述命令后就可以使用键盘对其进行简单的控制了，同时可以使用下面的服务完成对机器狗的控制,支持的服务有walk、up、sit，分别对应走、站、趴。
+Once the command runs, you can control the robot dog with keyboard input. Behavior services support `walk`, `up`, and `sit`.
 ```bash
 ros2 service call /robot1/robot_behavior_command quadropted_msgs/srv/RobotBehaviorCommand "{command: 'walk'}"
 ```
 ![alt text](<images/2026-05-10 19-48-16.gif>)
 
-## 2.3 建图和导航
-建图需在终端中输入如下命令
-```bash
-ros2 launch gazebo_sim launch.py sensors:=true world:=warehouse.sdf 
-ros2 launch cartographer go2_cartographer.launch.py
- ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/robot1/cmd_vel #【键盘控制
-ros2 run nav2_map_server map_saver_cli -t map -f warehouse_map #保存地图
-```
-![alt text](images/image-21.png)
-
-![alt text](<images/2026-05-10 20-10-20.gif>)
-
-导航需要在终端中输入如下命令
-```bash
-ros2 launch gazebo_sim launch.py sensors:=true world:=warehouse.sdf 
-ros2 launch navigation2 go2_navigation2.launch.py 
-```
-![alt text](images/image-22.png)
-
-![alt text](<images/2026-05-10 20-18-03.gif>)
-
-# 后言
-此项目的构建离不开开源社区的力量，我仅是对开源社区中项目进行了整合，并做了一些修改，但功劳远不及其他项目的作者。在此感谢开源社区，开源项目，开源社区。
+# Afterword
+This project would not be possible without the strength of the open-source community. I mainly integrated existing open-source projects and made some modifications, but the credit belongs far more to the original project authors. Thanks to the open-source community, open-source projects, and open-source contributors.
