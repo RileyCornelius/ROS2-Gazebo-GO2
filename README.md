@@ -1,7 +1,7 @@
 <h1 align="center">Go2 Gazebo Sim</h1>
 
 <p align="center">
-  <img src="https://www.unitree.com/images/b5fffd3e4fc04e6f9fcafedb9516b341_3840x2146.jpg" alt="Unitree Go2" width="720">
+  <img src="https://www.unitree.com/docs/images/b5fffd3e4fc04e6f9fcafedb9516b341_3840x2146.jpg" alt="Unitree Go2" width="720">
 </p>
 
 # 1. Project Description
@@ -62,7 +62,7 @@ ros2 launch gazebo_sim launch.py
 
 The first launch may take longer because Gazebo downloads required world resources. After a successful launch:
 
-![alt text](images/image-18.png)
+![alt text](docs/images/image-18.png)
 
 Launch with extended sensors in a specific world:
 ```bash
@@ -90,9 +90,9 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/ro
 ros2 run nav2_map_server map_saver_cli -t map -f warehouse_map
 ```
 
-![alt text](images/image-21.png)
+![alt text](docs/images/image-21.png)
 
-![alt text](<images/2026-05-10 20-10-20.gif>)
+![alt text](<docs/images/2026-05-10 20-10-20.gif>)
 
 For navigation:
 ```bash
@@ -104,9 +104,9 @@ ros2 launch navigation2 go2_navigation2.launch.py
 
 Set a `2D Pose Estimate` at the Go2 spawn point (0, 0), then use `2D Nav Goal` to navigate.
 
-![alt text](<images/2026-05-10 20-18-03.gif>)
+![alt text](<docs/images/2026-05-10 20-18-03.gif>)
 
-![alt text](images/image-22.png)
+![alt text](docs/images/image-22.png)
 
 # Afterword
 This project would not be possible without the strength of the open-source community. I mainly integrated existing open-source projects and made some modifications, but the credit belongs far more to the original project authors. Thanks to the open-source community, open-source projects, and open-source contributors.
