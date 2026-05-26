@@ -1,0 +1,36 @@
+services:
+  go2_sim:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        USER_ID: ${USER_ID:-1000}
+        GROUP_ID: ${GROUP_ID:-1000}
+    image: go2_sim:latest
+    container_name: go2_sim
+    tty: true
+    stdin_open: true
+    working_dir: /workspaces/ROS2-Gazebo-GO2
+    network_mode: host
+    environment:
+      DISPLAY: ${DISPLAY}
+      NVIDIA_DRIVER_CAPABILITIES: all
+      QT_X11_NO_MITSHM: "1"
+      RMW_IMPLEMENTATION: rmw_cyclonedds_cpp
+      GZ_SIM_RESOURCE_PATH: /workspaces/ROS2-Gazebo-GO2/src/gazebo_sim/models
+      CYCLONEDDS_URI: file:///workspaces/ROS2-Gazebo-GO2/config/cyclonedds.xml
+    devices:
+      - /dev/snd:/dev/snd
+      - /dev/dri:/dev/dri
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ..:/workspaces/ROS2-Gazebo-GO2
+      - /dev/shm:/dev/shm
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    command: /bin/bash

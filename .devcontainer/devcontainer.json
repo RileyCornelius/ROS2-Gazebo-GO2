@@ -1,0 +1,23 @@
+{
+  "name": "ROS2 Gazebo GO2",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "go2_sim",
+  "workspaceFolder": "/workspaces/ROS2-Gazebo-GO2",
+  "remoteUser": "rosuser",
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": "bash -lc 'rosdep update && rosdep install --from-paths src --ignore-src -r -y && colcon build --symlink-install'",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-iot.vscode-ros",
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "ms-vscode.cmake-tools",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}

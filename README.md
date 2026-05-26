@@ -77,23 +77,26 @@ ros2 launch navigation2 go2_navigation2.launch.py
 ![alt text](<images/2026-05-10 20-18-03.gif>)
 
 ## 2.3 Using Docker
-Before using Docker, please read the Docker setup guide briefly, since environments may differ. In my setup, I use mounted volumes.
+The Docker and VS Code devcontainer setup lives in `.devcontainer` and mounts this repository at `/workspaces/ROS2-Gazebo-GO2` inside the container. It is configured for GUI simulation with Gazebo/RViz through X11, host networking, shared memory, sound, `/dev/dri`, and optional NVIDIA GPU access.
 
 The following commands cover the main Docker workflow:
 ```bash
-cd ROS2-Gazebo-GO2/src/docker
-docker compose up -d --build --remove-orphans        # Build containers
-docker compose up -d go2_sim                        # Start container in detached mode
-docker compose ps                                    # List containers
-docker compose exec go2_sim bash                    # Enter container
-docker compose down                                  # Remove containers
+cd ROS2-Gazebo-GO2
+docker compose -f .devcontainer/docker-compose.yml up -d --build --remove-orphans
+docker compose -f .devcontainer/docker-compose.yml ps
+docker compose -f .devcontainer/docker-compose.yml exec go2_sim bash
+docker compose -f .devcontainer/docker-compose.yml down
 ```
 
-Inside the Docker container, follow the same steps as direct local usage:
+Inside the Docker container, install dependencies and build the workspace:
 ```bash
-colcon build
-source install/setup.bash
+rosdep update
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+source setup.sh
 ```
+
+For VS Code, install the Dev Containers extension and run **Dev Containers: Reopen in Container** from this repository. The devcontainer uses the same Docker Compose service and automatically runs `rosdep update`, `rosdep install`, and `colcon build --symlink-install` on first creation.
 
 ![alt text](images/image-19.png)
 
