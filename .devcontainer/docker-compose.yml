@@ -21,7 +21,7 @@ services:
       CYCLONEDDS_URI: file:///workspaces/ROS2-Gazebo-GO2/config/cyclonedds.xml
     devices:
       - /dev/snd:/dev/snd
-      - /dev/dri:/dev/dri
+      # - /dev/dri:/dev/dri
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ..:/workspaces/ROS2-Gazebo-GO2

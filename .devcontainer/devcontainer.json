@@ -5,7 +5,7 @@
   "workspaceFolder": "/workspaces/ROS2-Gazebo-GO2",
   "remoteUser": "rosuser",
   "shutdownAction": "stopCompose",
-  "postCreateCommand": "bash -lc 'rosdep update && rosdep install --from-paths src --ignore-src -r -y && colcon build --symlink-install'",
+  "postCreateCommand": "bash .devcontainer/post-install.sh",
   "customizations": {
     "vscode": {
       "extensions": [
